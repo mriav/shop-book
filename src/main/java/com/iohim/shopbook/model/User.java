@@ -39,7 +39,7 @@ public class User {
 
     @Min(value = 1, message = "Возрост не может быть нулевым")
     @Column(name= "age")
-    private Long age;
+    private int age;
 
     @NotEmpty(message = "Ошибка Email не может быть пустым")
     @Email

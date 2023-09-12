@@ -10,8 +10,8 @@
 <table border="1" cellpadding="10">
     <tr>
         <th>ID</th>
-        <th>Name</th>
         <th>LastName</th>
+        <th>Name</th>
         <th>Patronymic</th>
         <th>Age</th>
         <th>Email</th>
@@ -20,8 +20,8 @@
     </tr>
     <tr th:each ="user : ${allUsers}">
         <td th:utext="${user.getId()}"></td>
-        <td th:utext="${user.getName()}"></td>
         <td th:utext="${user.getLastName()}"></td>
+        <td th:utext="${user.getName()}"></td>
         <td th:utext="${user.getPatronymic()}"></td>
         <td th:utext="${user.getAge()}"></td>
         <td th:utext="${user.getEmail()}"></td>
